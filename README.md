@@ -28,9 +28,9 @@ model = HiResNet(size, weights, classes) #will return the Hi-ResNet model.
 
 Example:
 ```python
-# Creates the Hi-ResNet model for an 896x896 input image, randomly initializes weights, and assigns 50 output neurons
-model = HiResNet(896, "Res50", 50)
-# Initializes my pretrained weights from a coin grading dataset
+# Returns model for an 896x896 input image, randomly initializes weights, and assigns 50 output neurons
+model = HiResNet(896, "None", 50)
+# Optional, initializes my pretrained weights from a coin grading dataset
 
 compiler
 run
