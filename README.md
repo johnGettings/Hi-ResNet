@@ -15,7 +15,7 @@ There are three Hi-ResNet model heads to choose from, depending on your image in
 1) <b>size</b> (Int)  
     (448, 896, or 1792) Size of the input image.
 3) <b>weights</b> (Str)  
-    ("Res50" or "None") Set to "Res50" to train with original ResNet50 weights within the base model and randomly initialized weights for the Hi-ResNet head. "None" will randomly initialize everything.
+    ("Res50" or "None") Set to "Res50" to train with original ResNet50 imagenet weights within the base model and randomly initialized weights for the Hi-ResNet head. "None" will randomly initialize everything.
   4) <b>classes</b> (Int)  
       Will set the number of output neurons for the final layer.
 
