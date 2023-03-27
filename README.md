@@ -2,6 +2,8 @@
 
 Hi-ResNet is an expansion of the original ResNet50 architecture to allow for higher resolution inputs (448x448, 896x896, or 1792x1792). It was created as an alternative to image tiling and may prove useful in analyzing large images with fine details necessary for classification. The inception came from a personal coin grading project, which relies on evaluating fine details of both the front and back of the entirety of the coin. I quickly realized that a 224x224 image completely obscures fine details needed to grade the coin. The model saw ~40% accuracy increase when switching to Hi-ResNet and I believe it could even see more if I had a larger dataset.
 
+The actual efficiency and effectiveness on datasets of various sizes has not been thoroughly tested. Other composite or tiling methods may achieve higher accuracy but will come with a longer and more complex pipeline.
+
 # Architecture
 The architecture is just a continuation from the original paper. I have included an architecture diagram for the original ResNet as well as the model heads for the three Hi-ResNet models below. The pattern from the original paper is continued down to the correct input size and number of features. The initial 7x7 conv and max pooling layers are removed from the original architecture and replaced by the Hi-ResNet head.
 
